@@ -1,0 +1,555 @@
+@import 'fonts.css';
+@import 'icon.css';
+
+:root {
+  --rob700: "Roboto-bold";
+  --rob500: "Roboto-Medium";
+  --rob400: "Roboto-Regular";
+  --c400: "Comfortaa-Regular";
+  --M700: "Montserrat-Bold";
+  --M500: "Montserrat-Medium";
+  --M400: "Montserrat-Regular";
+  --c700: "Comfortaa-Bold";
+  --yellow: #F18128;
+}
+
+body {
+  background-color: #040D1F;
+}
+
+.link {
+  background-color: #040D1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 166px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 12px;
+  font-family: var(--rob500);
+  margin-right: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.link:hover {
+  color: #000;
+  background-color: var(--yellow);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: -90px;
+  z-index: 2;
+}
+
+.header__top {
+  padding: 20px 0;
+  background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+}
+
+.header__icon {
+  font-size: 50px;
+  color: white;
+}
+
+.header__text {
+  margin: 0;
+  font-family: var(--c400);
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  width: 166px;
+  margin-left: 24px;
+}
+
+.nav {
+  padding: 0;
+  background: rgb(1, 3, 5) !important;
+  backdrop-filter: blur(15px);
+}
+
+.nav__title {
+  font-family: var(--c700);
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.nav-link span {
+  padding: 40px 0;
+}
+
+.nav-link {
+  font-family: var(--M400);
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  transition: 0.5s;
+  background-color: var(--yellow);
+}
+
+.nav-link:hover::after {
+  transform: scale(1);
+}
+
+.intro {
+  background-image: url(../images/kong_skull_island\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 15, 25, 0.75);
+  z-index: -1;
+}
+
+.intro__title {
+  font-family: var(--M700);
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.intro__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #C8C8C8;
+  width: 570px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.intro__info {
+  display: flex;
+}
+
+.window {
+  position: relative;
+  background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.window__img {
+  margin-top: 50px;
+}
+
+.window__text {
+  width: 558px;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  color: #000000;
+  margin-bottom: 55px;
+}
+
+.window__info {
+  padding: 43px 0 80px;
+}
+
+/* ***************************** four films section start******************* */
+.films__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-family: var(--c400);
+  color: #F18128;
+  margin: 60px 0px;
+
+}
+
+.films__title::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  height: 2px;
+  width: 0%;
+  transform: scale(0);
+  background-color: #F18128;
+  transition: 0.5s;
+}
+
+.films__title:hover::after {
+  cursor: pointer;
+  width: 12%;
+  transform: scale(1);
+  height: 2px;
+
+}
+
+
+
+.four_-films-_section {
+  background: #040D1F;
+
+}
+
+.black__pantera__bg_img {
+  transition: 0, 5s;
+  border-radius: 6px;
+}
+
+.playbutton_lengts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+}
+
+.video_name {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: var(--c400);
+  justify-content: center;
+  display: flex;
+}
+
+.play_button {
+  width: fit-content;
+  transition: 0.5s;
+}
+
+.wrap_info {
+  background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.video_length {
+  border: 1px solid white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 2px 29px;
+  margin-top: 13px;
+  transition: 0.5s;
+}
+
+.body_text {
+  margin: 0 auto;
+  transition: 0.5s;
+
+}
+
+.video_info {
+  width: 234px;
+
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: var(--rob400);
+}
+
+
+.box_items {
+  position: relative;
+  width: 264px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.box_items:hover .black__pantera__bg_img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.box_items:hover .play_button {
+  transform: rotateX(350deg) scale(1.2);
+}
+
+.box_items:hover .body_text {
+  transform: translate(300px);
+}
+
+.box_items:hover .video_length {
+  transform: translateX(-300px);
+}
+
+.wrappper_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section Collection Start */
+
+.collection__title {
+  color: #F18128;
+  margin: 60px 0;
+  font-family: var(--c400);
+}
+
+.collection__title::after {
+  display: flex;
+  flex-direction: column;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--yellow);
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.collection__title:hover::after {
+  width: 25%;
+  transform: scale(1);
+}
+
+.collection__item {
+  width: 362px;
+  height: 200px;
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.collection_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.collection__item::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.collection__item::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/img_border.png);
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  background-position: center;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.collection__item:hover .collection_img {
+  transform: scale(1.2);
+}
+
+.collection__item:hover::after {
+  transform: scale(1.3);
+}
+
+.play__icon {
+  position: absolute;
+  transition: 0.3s;
+}
+
+.collection__item:hover .play__icon {
+  transform: scale(1.2) rotateX(360deg);
+  /* top: -15%; */
+}
+
+.item__title {
+  color: white;
+}
+
+.collection__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section Collection End */
+/* serias section start */
+.img_info__wrapper {
+ 
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.info_text_container {
+  position: absolute;
+  left: 3%;
+  width: 95%;
+  
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.serias__bg__img {
+  position: relative;
+  z-index: -1;
+}
+
+.bg_img_gamethrones {
+  object-fit: cover;
+  width: 100%;
+}
+
+.serias__bg__img::before {
+  content: "";
+  background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* serias section end */
+/* ************aast boxes****** */
+.big__left_img{
+
+  position: relative;
+  width: 560px;
+}
+.big__left_img::after{
+  content: "";
+  background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+.playbuton_vs_title{
+  position:absolute;
+  color: white;
+
+  top: 35%;
+  left:30%;
+  text-align: center;
+  z-index: 3;
+}
+.playbtn{
+  margin-bottom:20px ;
+}
+
+/* **** */
+.four_little_bg_img{
+  position: relative;
+  width: 266px;
+  border-radius: 6px;
+
+}
+.four_little_bg_img::after{
+  content: "";
+  background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.img_VS_titl{
+ 
+  text-align: center;
+  color: white;
+  position: absolute;
+}  
+
+ 
+.wraper_box_aall_info{
+ 
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+}
+  
+
+
+
+
+.wrapper__of__two__boxes{
+
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.right__four__imgs{
+  width: 560px;
+  justify-content: space-between;
+ 
+}
+.footer{
+  background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+}
+.footer_img{
+ width: 300px;
+ 
+ padding: 24px 0;
+}
+.footer>p{
+  padding: 24px 0;
+  color: white;
+  
+}
